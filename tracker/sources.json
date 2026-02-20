@@ -12,5 +12,40 @@
     "type": "html",
     "selector": ".devsite-article-container h1",
     "link_selector": ".devsite-article-header a"
-  }
+  },
+  {
+    "name": "Google Search Central – What's New",
+    "url": "https://developers.google.com/search/news",
+    "type": "html",
+    "selector": "article h2",
+    "link_selector": "article a"
+  },
+  {
+    "name": "Search Engine Journal – News",
+    "url": "https://www.searchenginejournal.com/category/news/",
+    "type": "html",
+    "selector": "article h2 a",
+    "link_attr": "href"
+  },
+  {
+    "name": "Search Engine Land – SEO",
+    "url": "https://searchengineland.com/library/channel/seo",
+    "type": "html",
+    "selector": "article h2 a",
+    "link_attr": "href"
+  },
+  {
+    "name": "OpenAI Blog",
+    "url": "https://openai.com/blog",
+    "type": "html",
+    "selector": "article h2 a",
+    "link_attr": "href"
+  },
+  {
+    "name": "DeepMind Blog",
+    "url": "https://deepmind.google/discover/blog",
+    "type": "html",
+    "selector": "article h3 a",
+    "link_attr": "href"
+  },
 ]
