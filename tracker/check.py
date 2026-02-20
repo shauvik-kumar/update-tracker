@@ -1,7 +1,7 @@
 import json, os, smtplib, feedparser
 import httpx
 from bs4 import BeautifulSoup
-from email.mime.text import MIMEText
+from email.mime_text import MIMEText
 from datetime import datetime
 
 STATE_FILE = "tracker/state.json"
@@ -23,8 +23,8 @@ def send_email(subject, body):
     msg["From"]    = os.environ["GMAIL_USER"]
     msg["To"]      = os.environ["NOTIFY_EMAIL"]
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
-      s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
-      s.send_message(msg)
+        s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
+        s.send_message(msg)
 
 def alert(log, source_name, title, link):
     log.insert(0, {
@@ -79,8 +79,5 @@ for src in SOURCES:
 
 save(STATE_FILE, state)
 save(LOG_FILE, log[:100])
-
-# TEMP: send a test email every run to confirm Gmail works
-send_email("Test email from update-tracker", "<p>If you see this, Gmail SMTP works.</p>")
 
 print("✅ Check complete")
