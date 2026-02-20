@@ -48,4 +48,11 @@
     "selector": "article h3 a",
     "link_attr": "href"
   },
+  {
+    "name": "FunWithAI Blog",
+    "url": "https://funwithai.in/",
+    "type": "html",
+    "selector": "article h2 a",
+    "link_attr": "href"
+  }
 ]
