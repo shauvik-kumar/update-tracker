@@ -1,7 +1,7 @@
 import json, os, smtplib, feedparser
 import httpx
 from bs4 import BeautifulSoup
-from email.mime_text import MIMEText
+from email.mime.text import MIMEText
 from datetime import datetime
 
 STATE_FILE = "tracker/state.json"
