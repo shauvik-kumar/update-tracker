@@ -1,0 +1,16 @@
+[
+  {
+    "name": "WhatsApp Blog",
+    "url": "https://blog.whatsapp.com/",
+    "type": "html",
+    "selector": "article h2:first-of-type a",
+    "link_attr": "href"
+  },
+  {
+    "name": "Google Search Central Blog",
+    "url": "https://developers.google.com/search/blog",
+    "type": "html",
+    "selector": ".devsite-article-container h1",
+    "link_selector": ".devsite-article-header a"
+  }
+]
